@@ -1,0 +1,45 @@
+#boxes-container {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+#boxes-container header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boxes-container ul {
+  margin: 30px 0;
+  list-style: none;
+}
+
+#boxes-container ul li {
+  display: flex;
+  width: 150px;
+  float: left;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#boxes-container ul li .fileInfo {
+  align-items: center;
+  text-decoration: none;
+}
+
+#boxes-container ul li .fileInfo svg {
+  margin-bottom: -2px;
+}
+
+#boxes-container ul li .fileInfo strong {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #333;
+}
+
+#boxes-container ul li p {
+  color: #999;
+  font-size: 13px;
+}

@@ -30,7 +30,7 @@ export default class Box extends Component {
 
     io.on('file', data => {
       this.setState({
-        box: { ... this.state.box, files: [ data, ... this.state.box.files]}
+        box: { ...this.state.box, files: [ data, ...this.state.box.files]}
       });
     })
   }
@@ -68,7 +68,7 @@ export default class Box extends Component {
           {this.state.box.files &&
             this.state.box.files.map(file => (
               <li key={file._id}>
-                <a className="fileInfo" href={file.url} target="_blank">
+                <a className="fileInfo" href={file.url} target="_self">
                   <MdInsertDriveFile size={24} color="#A5Cfff" />
                   <strong>{file.title}</strong>
                 </a>
